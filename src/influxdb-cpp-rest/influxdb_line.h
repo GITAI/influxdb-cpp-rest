@@ -149,6 +149,10 @@ namespace influxdb {
                 return !res.size();
             }
 
+            inline void clear() {
+                res.clear();
+            }
+
         private:
             inline void add_comma_if_necessary() {
                 if (!this->empty())
